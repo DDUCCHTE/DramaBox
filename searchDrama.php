@@ -5,7 +5,7 @@ $results = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
     $searchQuery = htmlspecialchars($_GET['search']);
-    $apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250210/in/search.json?searchValue=' . urlencode($searchQuery);
+    $apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250417/in/search.json?searchValue=' . urlencode($searchQuery);
     $data = file_get_contents($apiUrl);
 
     if ($data !== false) {
