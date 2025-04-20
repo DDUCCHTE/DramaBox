@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', 0);
-$apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250210/in.json';
+$apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250417/in.json';
 $data = file_get_contents($apiUrl);
 
 $bigList = [];
