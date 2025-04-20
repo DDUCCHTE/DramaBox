@@ -3,7 +3,7 @@ ini_set('display_errors', 0);
 if (isset($_GET['bookId']) && isset($_GET['bookNameLower'])) {
   $bookId = htmlspecialchars($_GET['bookId']);
   $bookNameLower = htmlspecialchars($_GET['bookNameLower']);
-  $apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250210/in/movie/' . $bookId . '/' . $bookNameLower . '.json';
+  $apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250417/in/movie/' . $bookId . '/' . $bookNameLower . '.json';
   $data = file_get_contents($apiUrl);
 
   if ($data === false) {
