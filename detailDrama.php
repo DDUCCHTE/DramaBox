@@ -12,7 +12,7 @@ if (empty($bookId) || empty($bookNameLower)) {
 }
 
 // URL API untuk mendapatkan detail drama
-$apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250210/in/movie/' . urlencode($bookId) . '/' . urlencode($bookNameLower) . '.json';
+$apiUrl = 'https://www.dramaboxdb.com/_next/data/dramaboxdb_prod_20250417/in/movie/' . urlencode($bookId) . '/' . urlencode($bookNameLower) . '.json';
 $data = file_get_contents($apiUrl);
 
 $dramaDetails = [];
